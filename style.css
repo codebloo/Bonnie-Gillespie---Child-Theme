@@ -1,0 +1,220 @@
+/*
+Theme Name:  TheBlogger Child
+Theme URI:   http://themeforest.net/user/pixelwars/portfolio
+Description: Child theme for TheBlogger theme.
+Author:      Pixelwars
+Author URI:  http://themeforest.net/user/pixelwars
+Template:    theblogger
+Version:     1.0
+Tags:        blog
+Text Domain: theblogger-child
+*/
+
+@import url("../theblogger/style.css");
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+img.scale-with-grid{
+	display: block;
+	height:auto;
+	max-width:100%;}
+
+
+/* NEWSLETTER FORM IN SIDEBAR */
+.gform_widget,
+.sidebar #text-8 { 
+    background-image: repeating-linear-gradient(135deg, #ff6969, #ff6969 10px, #FFF 0px, #FFF 20px, #85adff 0px, #85adff 30px, #FFF 0px, #FFF 40px);
+    background-image: repeating-linear-gradient(135deg, #ff6969, #ff6969 10px, #FFF 0px, #FFF 20px, #85adff 0px, #85adff 30px, #FFF 0px, #FFF 40px);
+    background-image: repeating-linear-gradient(135deg, #ff6969, #ff6969 10px, #FFF 0px, #FFF 20px, #85adff 0px, #85adff 30px, #FFF 0px, #FFF 40px);
+	 padding: 4px;
+	}
+.sidebar .gform_widget .gform_wrapper,
+.sidebar #text-8 .textwidget {
+	background: #f7f7f7;
+	margin:0;
+	padding: 26px;}
+.sidebar .gform_wrapper span.gform_description,
+.sidebar #text-8 p{
+	    display: block;
+	    font-size: 11px;
+	    font-weight: 400;
+	    letter-spacing: 1px;
+	    margin-bottom: 0.6em;
+		 text-align:center;
+	    text-transform: uppercase;
+	 	  width: 100%;}
+		  
+		.sidebar  .gform_wrapper ul.gform_fields li.gfield{padding-right:0;}
+		 
+.sidebar .gform_wrapper .top_label .gfield_label{display:none;}		 
+.sidebar .gform_widget .gform_wrapper p:last-of-type {margin-bottom: 0;}
+.sidebar  #text-8 input{margin-bottom:20px;}
+.sidebar .gform_wrapper .gform_body .ginput_container_email input[type="text"],
+.sidebar #text-8 input[type="text"],
+.sidebar #text-8 input[type="email"]{
+	background-color: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.07);
+    border-radius: 0;
+    box-sizing: border-box;
+    color: #333;
+    font-size: 13px;
+    padding: 1em!important;
+    width: 100%;}
+
+.mc4wp-form label.error {
+	bottom: auto;
+	top: 36px;}
+	
+	.sidebar .gform_wrapper .gform_footer {text-align: center;}
+	.sidebar .gform_wrapper .gform_footer input[type="submit"]{
+			font-size: 11px;
+			margin-right:0;}
+			
+	.single_logo{padding:10px;}	
+	
+/* FAQS */
+	.faq {list-style-type:none;}
+	.faq li{margin-bottom:20px;}
+	.question,
+	.answer{padding: 10px;}
+	.question .fa-minus{display:none;}
+	.question.active .fa-plus{display:none;}
+	.question.active .fa-minus{display:inline-block;}
+	.question{
+		background-color:#f9f9f9;
+		border:1px solid #eeeeee;}	
+	.answer{
+		background-color:$white;
+		border:1px solid #f0f0f0;
+		border-top:none;}	
+	.question p{display:inline;}		
+	
+/* Hot Sheets */
+	.popular_hotsheet {
+		display:inline;
+		padding-left:5px;}
+	.popular_hotsheet span{font-style:italic;}	
+
+/* Praise */	
+.red_carpet_gallery{
+	list-style-type:none;
+	padding-left:0;
+	position:relative;}
+	.red_carpet_gallery li{width:33%;}
+	.red_carpet_gallery li a{display:block;}
+	.red_carpet_gallery li a img{margin: 0 auto;}
+	.red_carpet_gallery li .mask{
+			 background-color: rgba(0, 0, 0, 0.2);
+	      display: block;
+	      height: 100%;
+	      left: 0;
+			opacity:0;
+	      position: absolute;
+	      top: 0;
+	      width: 100%;
+	      z-index: 9;}
+	.red_carpet_gallery li:hover .mask {opacity: 1;}
+	.red_carpet_gallery .mask a{
+	      display: inline-block;
+	      height: 100%;
+	      outline: 0 none;
+	      text-align: center; 
+	      width: 100%;}	 
+	.red_carpet_gallery .mask span{
+	   color: #fff;
+	      display: block;
+	      font-size: 15px;
+	      line-height: 20px;
+	      margin-bottom: 0;
+	      position: absolute;
+	      text-align: center;
+	      top: 50%;
+	      transform: translateY(-50%);
+	      width: 100%;}	
+
+/* Testimonials */
+.single_praise{
+	clear:both;
+	margin-bottom:20px;}
+.testimonial_name {font-weight:bold;}
+.testimonial_name span{
+	font-style:italic;
+	font-weight:normal;}	
+	
+.quote_pic{
+	float:left;
+	width:25%;}	
+.quote_details{
+	float:left;
+	margin-left:3%;
+	width:72%;}	
+.quote_details_full{width:100%;}	
+		
+		
+/* Footer Subscribe */
+.footer-subscribe form .moonray-form-input-type-email	{padding-bottom:20px;}
+.footer-subscribe ul{
+	list-style-type:none;
+	margin-top:0;
+	padding-left:0;
+	text-align:center;}		
+.footer-subscribe ul li{display:inline-block;}	
+
+
+/* MAgic */
+.post-share ul{
+	list-style-type:none;
+	text-align:center;}
+.post-share ul li,
+.post-share h3{display:inline;}
+.share-box i{
+	font-size: 30px;
+	    margin-left: 10px;
+}
+
+/* Video Container */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.magic_bon_image{
+	display: block;
+	    margin: 0 auto;
+	    width: 60%;}
+.reload_bon{
+	display:block;
+	margin:20px auto;}	
+
+
+	blockquote{
+		font-size: 1.8em;
+	   line-height: 1em;
+	   max-width: 100%;
+	   padding: 0 10px;}
+
+.embed_audio,
+.embed_video{padding-bottom:30px;}
+.hentry iframe, 
+.hentry .fluid-width-video-wrapper	{width:100%;}	
+
+/* Classes Dashboard */
+
+ul.class_list{
+	list-style-type:none;
+	padding-left:0;}
+
+	@media screen and (max-width: 768px) {.magic_bon_image{width: 100%;}}
+			
