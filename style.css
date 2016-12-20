@@ -160,7 +160,7 @@ img.scale-with-grid{
 	padding-left:0;
 	text-align:center;}		
 .footer-subscribe ul li{display:inline-block;}	
-
+#menu-footer{list-style-type:none;}
 
 /* MAgic */
 .post-share ul{
@@ -199,11 +199,13 @@ img.scale-with-grid{
 	margin:20px auto;}	
 
 
-	blockquote{
-		font-size: 1.8em;
-	   line-height: 1em;
-	   max-width: 100%;
-	   padding: 0 10px;}
+
+		blockquote {
+		    font-size: 1.2em;
+		    line-height: 1.4em;
+		    max-width: 100%;
+		    padding: 0 26px;
+		    text-align: justify;}
 
 .embed_audio,
 .embed_video{padding-bottom:30px;}
@@ -215,6 +217,12 @@ img.scale-with-grid{
 ul.class_list{
 	list-style-type:none;
 	padding-left:0;}
+	
+/* Form Labels */	
+	.gform_wrapper label{
+		margin-bottom:0;
+		text-transform:none;}
+	body .gform_wrapper .top_label div.ginput_container{margin-top:0!important;}
 
 	@media screen and (max-width: 768px) {.magic_bon_image{width: 100%;}}
 			

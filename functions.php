@@ -154,7 +154,7 @@ function register_cpt_classes() {
         'labels' => $labels,
         'hierarchical' => false,
         
-        'supports' => array( 'title', 'editor', 'revisions','thumbnail'),
+        'supports' => array( 'title','revisions','thumbnail', 'comments'),
         'public' => true,
         'show_ui' => true,
         'show_in_menu' => true,
@@ -213,10 +213,11 @@ function register_taxonomy_courses() {
     register_taxonomy( 'courses', array('classes'), $args );
 }
 
-add_action( 'the_content', 'wpse49094_lock_content' );
-function wpse49094_lock_content( $content ) {
-    if( in_the_loop() ) {
-        $content = do_shortcode( 'do_shortcode('[s3mv]' . $content .  '[/s3mv]');
-        return $content;
+function default_comments_on( $data ) {
+    if( $data['post_type'] == 'classes' ) {
+        $data['comment_status'] = 'open';
     }
+
+    return $data;
 }
+add_filter( 'wp_insert_post_data', 'default_comments_on' );
